@@ -1,6 +1,6 @@
-N,S=map(int,input().split())
-N=min(S-1,N)
+N,X,Y=map(int,input().split())
 ans=0
 for i in range(1,N+1):
-    ans+=min(S-i,N)
+    if i%X==0:ans+=1
+    elif i%Y==0:ans+=1
 print(ans)
