@@ -1,6 +1,5 @@
 S=list(input())
 a,b=map(int,input().split())
-s=S[a-1]
-S[a-1]=S[b-1]
-S[b-1]=s
+a,b=a-1,b-1
+S[a],S[b]=S[b],S[a]
 print(''.join(S))

@@ -1,5 +1,11 @@
-from collections import defaultdict
-dp=[defaultdict(list) for _ in range(3)]
-dp[0][1]=3
-a=dp[0][0]
-print(a)
+from collections import deque
+d = deque(list(input()))
+
+print(d.pop())
+# d
+print(d)
+# deque(['a', 'b', 'c', 'b'])
+print(d.popleft())
+# a
+print(d)
+# deque(['b', 'c', 'b'])
