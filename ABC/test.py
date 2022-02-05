@@ -1,11 +1,6 @@
-from collections import deque
-d = deque(list(input()))
-
-print(d.pop())
-# d
-print(d)
-# deque(['a', 'b', 'c', 'b'])
-print(d.popleft())
-# a
-print(d)
-# deque(['b', 'c', 'b'])
+sum=0
+for j in range(10):
+    sum=0
+    for i in range(10**j):
+        sum+=i
+    print(sum)
