@@ -1,6 +1,5 @@
-sum=0
-for j in range(10):
-    sum=0
-    for i in range(10**j):
-        sum+=i
-    print(sum)
+from collections import defaultdict
+m=defaultdict(list)
+m[0]=1
+print(m[0])
+print(len(m[1]))

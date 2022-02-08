@@ -1,6 +1,3 @@
-from typing import DefaultDict
-
-
 import collections
 N,Q=map(int,input().split())
 a=list(map(int,input().split()))
