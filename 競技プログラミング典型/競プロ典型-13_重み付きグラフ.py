@@ -1,3 +1,4 @@
+#ダイクストラ法
 import heapq
 def DFS(s):
     dist=[10**15]*N
