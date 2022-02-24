@@ -8,5 +8,4 @@ for i in range(N):
             if dp[j][k]!=0:
                 dp[j+1][k+A[i]]+=dp[j][k]
     dp[1][A[i]]+=1
-print(dp)
 print(dp[5][1000])
