@@ -1,6 +1,3 @@
-from sys import flags
-
-
 n=int(input())
 s=list(input())
 t=[0]*(n*2)
