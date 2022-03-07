@@ -14,8 +14,7 @@ def soin(N):
     return a
 N=int(input())
 A=list(map(int,input().split()))
-A.sort()
-a=soin(A[0])
+a=soin(min(A))
 for i in range(1,N):
     b=[]
     for j in range(len(a)):
