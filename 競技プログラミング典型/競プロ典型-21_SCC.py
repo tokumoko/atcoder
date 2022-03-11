@@ -1,6 +1,6 @@
 #強連結成分分解
 import sys
-sys.setrecursionlimit(1e5)
+sys.setrecursionlimit(10000)
 def dfs(w):
     t[w]=False
     for j in g[w]:
