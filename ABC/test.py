@@ -1,3 +1,5 @@
-l = [0,1,2,5,354,5,25,24,2,42]
-l = list(set(l))
-print(l[0])
+i = 1
+for j in range(1,11):
+    i *= j
+print(i)
+print(10**9)
