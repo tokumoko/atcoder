@@ -1,8 +1,6 @@
 from itertools import permutations
 n = int(input())
-a = [[] for _ in range(n)]
-for i in range(n):
-    a[i] = list(map(int, input().split()))
+a = [list(map(int, input().split())) for _ in range(n)]
 m = int(input())
 uwasa = [[] for _ in range(n)]
 for i in range(m):
