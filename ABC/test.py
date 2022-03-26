@@ -1,5 +1,5 @@
-i = 1
-for j in range(1,11):
-    i *= j
-print(i)
-print(10**9)
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+a,b = zip(*sorted(zip(a,b)))
+print(a[0])
+print(b)
