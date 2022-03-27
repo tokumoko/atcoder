@@ -3,8 +3,8 @@ a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 c = list(map(int, input().split()))
 d = list(map(int, input().split()))
-a,b = zip(*sorted(zip(a,b)))
-c,d = zip(*sorted(zip(c,d)))
+a,b = zip(*(sorted(zip(a,b),reverse=True)))
+c,d = zip(*(sorted(zip(c,d),reverse=True)))
 i = 0
 j = 0
 flag = True
