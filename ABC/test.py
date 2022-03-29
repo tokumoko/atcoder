@@ -1,5 +1,4 @@
-a = list(map(int, input().split()))
-b = list(map(int, input().split()))
-a,b = zip(*sorted(zip(a,b)))
-print(a[0])
-print(b)
+a = []
+for _ in range(3):
+    a.append(tuple(map(int,input().split())))
+print(a)
