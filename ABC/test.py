@@ -1,4 +1,6 @@
-a = []
-for _ in range(3):
-    a.append(tuple(map(int,input().split())))
-print(a)
+import sys
+a = sys.getrecursionlimit()
+def f(n):
+    if n == 1000:return n
+    else:return f(n+1)
+print(f(3))
