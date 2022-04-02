@@ -1,6 +1,7 @@
-import sys
-a = sys.getrecursionlimit()
-def f(n):
-    if n == 1000:return n
-    else:return f(n+1)
-print(f(3))
+import math
+a = []
+for i in range(100):
+    for j in range(i+1,100):
+        n = (i*i + j*j) * (i+j)
+        a.append((n, i, j))
+print(sorted(a))
