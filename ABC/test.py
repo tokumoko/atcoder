@@ -1,4 +1,2 @@
-from cmath import sqrt
-
-
-print(7 / sqrt(5))
+print(10**5)
+print(2**17)
