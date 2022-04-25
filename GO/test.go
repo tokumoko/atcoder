@@ -1,9 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-  var a string
-  fmt.Scan(&a)
-  fmt.Println(a)
+  fmt.Println("Hello work")
 }
