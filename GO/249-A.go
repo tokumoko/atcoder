@@ -35,9 +35,9 @@ func main() {
 	taka = (X / (A+C))*A + min(A, X % (A+C))
 	aoki = (X / (D+F))*D + min(D, X % (D+F))
 	
+
 	taka *= B
 	aoki *= E
-	
 	if taka > aoki{
 		fmt.Println("Takahashi")
 	} else if taka < aoki{
