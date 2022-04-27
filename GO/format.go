@@ -2,9 +2,8 @@ package main
 
 import (
 	"bufio"
-	"log"
+	"fmt"
 	"os"
-	"runtime"
 	"strconv"
 )
 
@@ -17,5 +16,7 @@ func input() int {
 }
 
 func main() {
-	log.Println(runtime.NumGoroutine())
+	sc.Split(bufio.ScanWords)
+	N := input()
+	var T[N] int
 }
