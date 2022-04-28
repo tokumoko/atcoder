@@ -6,13 +6,11 @@ import (
 	"os"
 	"strconv"
 )
-
 var sc = bufio.NewScanner(os.Stdin)
-
-func input() int {
-    sc.Scan()
-    i, _ := strconv.Atoi(sc.Text())
-    return i
+func input() (int) {
+	sc.Scan()
+	ans, _ := strconv.Atoi(sc.Text())
+	return ans
 }
 
 func main() {
