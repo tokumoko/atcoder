@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"strings"
 )
 var sc = bufio.NewScanner(os.Stdin)
 func input() (int) {
@@ -23,25 +22,36 @@ func main() {
 	gy := input()
 	gx := input()
 	c := make([]string, R)
-	MAP := make([][]int64, R+2)
+	MAP := make([][]int, R)
 	for i := 0; i < R; i++ {
 		sc.Scan()
 		c[i] = sc.Text()
 	}
-	for i = 0; i < R+2; i++ {
-		MAP[i] = make([]int64, C+2)
-		for j := 0; j < C+2; j++ {
+	for i := 0; i < R; i++ {
+		MAP[i] = make([]int, C)
+		for j := 0; j < C; j++ {
 			MAP[i][j] = -1
 		}
 	}
-	var queue string
-	var x int
-	for i = 0; i < R; i++ {
-		queue = strings.Split(c[i])[]
-		for j = 0; j < C; j++ {
-			x = pop
+	inf := 100000
+	for i := 0; i < R; i++ {
+		for j := 0;j < C; j++ {
+			if c[i][j] == '#' {
+				MAP[i][j] = inf	
+			}
 		}
 	}
-	fmt.Println(MAP)
-	fmt.Println(sy, sx, gy, gx)
+	MAP[sx-1][sy-1] = 0
+	var queue []int
+	var x, y int
+	queue = append(queue, sx-1, sy-1)
+	for {
+		if len(queue) == 0 {break}
+		x = queue[0]
+		y = queue[1]
+		queue = queue[2:]
+		if MAP[x-1][y] == -1{
+
+		}
+	}
 }

@@ -24,8 +24,8 @@ func main() {
 	}
 	p := make([]string, 3)
 	for i := 0; i < 3; i++ {
-		p[i] = strings.Split(c[0], "")[3]
+		p[i] := strings.Split(c[0], "")
 	}
 	fmt.Println(c)
-	fmt.Println(p[0])
+	fmt.Println(p)
 }
