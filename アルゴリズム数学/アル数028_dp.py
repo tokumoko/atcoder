@@ -1,3 +1,4 @@
+
 n=int(input())
 h=list(map(int,input().split()))
 dp=[0]*n
