@@ -12,16 +12,17 @@ for i in range(n):
     a[i] = d[a[i]]
 for i in range(n):
     b[i] = d.get(b[i], 10**6)
-val_a = 0
-val_b = 0
+max_a = 0
+max_b = 0
 st = set()
 for i in range(n):
-    val_a = max(val_a, a[i])
-    ans_a[i] = val_a
-    val_b = max(val_b, b[i])
+    max_a = max(max_a, a[i])
+    ans_a[i] = max_a
+    max_b = max(max_b, b[i])
     if not b[i] in st:
         st.add(b[i])
-    ans_b.append((val_b, len(st)))
+    ans_b.append((max_b, len(st)))
+
 q = int(input())
 for i in range(q):
     x, y = map(int, input().split())

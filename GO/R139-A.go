@@ -18,7 +18,7 @@ func input() int {
 func main() {
 	sc.Split(bufio.ScanWords)
 	N := input()
-	var T []int = []int{0}*N
+	var T []int
 	for i := 0;i < N;i++ {
 
 	}
