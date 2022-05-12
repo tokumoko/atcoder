@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"strconv"
 )
@@ -16,7 +15,18 @@ func input() (int) {
 
 func main() {
 	sc.Split(bufio.ScanWords)
-	a := float64(input())
-	b := float64(input())
-	fmt.Println(math.Pow(a, b) % float64(1000000007))
+	a := int64(input())
+	b := input()
+	ans := int64(1)
+	mod := int64(1000000007)
+	for b > 0 {
+		if b % 2 == 1{
+			ans *= a
+			ans %= mod
+		}
+		b >>= 1
+		a *= a
+		a %= mod
+	}
+	fmt.Println(ans)
 }
