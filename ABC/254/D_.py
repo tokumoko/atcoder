@@ -1,16 +1,11 @@
 from math import sqrt
 n = int(input())
-ans = 1
-for i in range(2, n+1):
-    t = 0
-    for j in range(2, int(sqrt(i)+1)):
-        if i % j == 0:
-            t = j
-            break
-    if t == 0:t = i
-    a = i*i
-    ans += 1
-    while a <= n:
-        ans += 2
-        a *= t
+ans = 0
+for i in range(1, n+1):
+    k = i
+    for j in range(2, int(sqrt(n)+1)):
+        while k % (j*j) == 0:k //= j*j
+    for j in range(1, n+1):
+        if k*j*j > n:break
+        ans += 1
 print(ans)
