@@ -1,6 +1,4 @@
-d = dict()
-d[0] = 1
-d[3] = 32
-print(d)
-d.pop(0)
-print(d)
+from math import sqrt
+a = 2*(10**5)
+print(a * sqrt(a))
+print(10**9)

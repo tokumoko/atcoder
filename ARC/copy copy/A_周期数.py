@@ -10,11 +10,15 @@ for i in range(t):
     n = int(input())
     sn = str(n)
     ans = 0
-    for j in range(1, len(sn) + 1):
-        if n % j != 0:continue
+    for j in range(1, len(sn)):
+        if len(sn) % j != 0:continue
         val = int(sn[:j])
         res = f(val, len(sn))
         if res > n:
-            res = f(val-1, len(sn))
-        ans = max(ans, res)
+            if val == 1 or len(str(val)) != len(str(val - 1)):
+                res = f(9, len(sn) - 1)
+            else:
+                res = f(val-1, len(sn))
+        if n >= res:
+            ans = max(ans, res)
     print(ans)
